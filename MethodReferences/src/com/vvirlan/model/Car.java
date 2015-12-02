@@ -51,5 +51,11 @@ public class Car {
   public static int compareByMileage(Car a, Car b) {
     return a.mileage - b.mileage;
   }
+  
+  public static void printArrayOfCars(Car[] carsArray) {
+    for (Car c : carsArray) {
+      System.out.println(c);
+    }
+  }
 
 }

@@ -24,23 +24,20 @@ public class StaticMethodReference {
     Car[] carsArray = new CarInstantiator().asArray();
 
     // Old way
-    printArray(carsArray);
+    Car.printArrayOfCars(carsArray);
     System.out.println("--------------------");
     Arrays.sort(carsArray, new CarsComparator());
-    printArray(carsArray);
+    Car.printArrayOfCars(carsArray);
     System.out.println("====================");
     // New way
     carsArray = new CarInstantiator().asArray();
-    printArray(carsArray);
+    Car.printArrayOfCars(carsArray);
     System.out.println("--------------------");
     Arrays.sort(carsArray, Car::compareByMileage);
-    printArray(carsArray);
+    //Equivalent lambda expression
+    Arrays.sort(carsArray, (a,b) -> Car.compareByMileage(a,b));
+    Car.printArrayOfCars(carsArray);
   }
 
-  private void printArray(Car[] carsArray) {
-    for (Car c : carsArray) {
-      System.out.println(c);
-    }
-
-  }
+ 
 }
