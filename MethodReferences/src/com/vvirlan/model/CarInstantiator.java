@@ -1,4 +1,4 @@
-package com.vvirlan;
+package com.vvirlan.model;
 
 import java.util.ArrayList;
 import java.util.List;

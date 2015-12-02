@@ -1,4 +1,4 @@
-package com.vvirlan;
+package com.vvirlan.model;
 
 public class Car {
   public enum Color {
