@@ -22,7 +22,6 @@ public class SimpleLambdaExpressionsExample {
     System.out.println("10 * 10 = "+operate(10, 10, multiplication));
     System.out.println("10 / 10 = "+operate(10, 10, division));
     
-    
   }
   
   private int operate(int a, int b, ArithmeticOperation operation) {
